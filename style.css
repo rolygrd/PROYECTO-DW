@@ -1,0 +1,62 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    
+}
+
+body{
+    
+    background-image: url(https://i.pinimg.com/originals/48/bd/e8/48bde8be878d2884cad9d5dc54b2bdc8.gif);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+  
+@font-face {    /* variable & url*/
+            font-family: 'StarJedi';
+            src: url('./1.ttf') format('truetype');
+        }
+
+        .font-star {
+            font-family: 'StarJedi', sans-serif;
+            letter-spacing: 2px;
+        }
+
+ @keyframes fadeInScale {
+            from {
+                opacity: 0;
+                transform: scale(0.96);
+            }
+
+            to {
+                opacity: 1;
+                transform: scale(1);
+            }
+        }
+
+        .animate-modal {
+            animation: fadeInScale 0.25s ease-out forwards;
+        }
+
+.controles-audio {
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.controles-audio button {
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    transition: background-color 0.3s;
+}
+
+.controles-audio button:hover {
+    background-color: #000000;
+
+}

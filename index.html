@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Project DW SWAPI</title>
+
+
+
+</head>
+
+<body>
+
+    <div class="container mx-auto px-4 py-8">
+
+        <!--CABEZERA-->
+        <header class="text-center mb-10 max-w-4xl mx-auto bg-slate-300/ backdrop-blur-md p-6
+             rounded-2xl border border-white-500 shadow-[0_0_20px_rgba(234,179,8,0.2)]">
+
+            <!--<h1 class="text-4xl md:text-5xl font-star text-yellow-400 mb-2  font-black tracking-widest ;">Start Wars</h1>-->
+            <img src="startlogo.png" alt="" >
+            <p class="text-xs md:text-sm text-slate-400 font-medium uppercase tracking-widest">
+                SWAPI Personajes
+            </p>
+        </header>
+
+        <div class="max-w-2xl mx-auto mb-8">
+            <input id="search-input" type="text" placeholder=" Escribir nombre de personaje : "
+                class="w-full bg-slate-900/90 border border-slate-700 rounded-xl px-4 py-3 text-white focus:outline-none focus:border-red-800 transition">
+        </div>
+
+        <!--COMPARACION-->
+        <section id="comparison-section"
+            class="hidden fixed inset-0 bg-slate-950/85 backdrop-blur-md z-50 overflow-y-auto p-4 md:p-6 items-center justify-center">
+        </section>
+
+        <!--CARACTERES-->
+        <main id="character-list"
+            class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-6 max-w-7xl mx-auto">
+        </main>
+
+           <!--BOTON DE ATRAS-->         
+        <div class="flex justify-center items-center gap-4 mt-12 mb-8">
+            <button id="prev-btn"
+                class="bg-white hover:bg-neutral-500 text-slate-950 font-bold uppercase tracking-wider px-6 py-2.5 rounded-xl text-sm transition duration-300">
+                Anterior
+            </button>
+
+            <!--INDICADOR DE PAGINA-->
+            <span id="page-indicator"
+                class="text-slate-400 font-medium text-sm tracking-wider bg-slate-900/90 px-5 py-2.5 rounded-xl border border-slate-800 min-w-[90px] text-center">
+                1 de 11
+            </span>
+            <!--BOTON DE SIGUIENTE-->
+            <button id="next-btn"
+                class="bg-white hover:bg-neutral-500 text-slate-950 font-bold uppercase tracking-wider px-6 py-2.5 rounded-xl text-sm transition duration-300">
+                Siguiente
+            </button>
+        </div>
+    </div>
+    <!--CONTROL DE AUDIO-->
+    <div class="controles-audio">
+        <button onclick="reproducirAudio()"> ▶️ Reproducir</button>
+        <button onclick="pausarAudio()"> ⏸️ Pausar</button>
+    </div>
+
+    <audio id="musicaFondo" src="StarWarsIntro.mp3" loop></audio>
+
+    <script src="index.js"></script>
+</body>
+
+</html>
