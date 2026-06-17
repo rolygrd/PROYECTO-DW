@@ -1,6 +1,7 @@
 *{
     padding: 0px;
     margin: 0px;
+<<<<<<< HEAD
     
 }
 
@@ -59,4 +60,17 @@ body{
 .controles-audio button:hover {
     background-color: #000000;
 
+=======
+}
+
+body{
+    display: flex ;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-image: url(https://i.pinimg.com/originals/48/bd/e8/48bde8be878d2884cad9d5dc54b2bdc8.gif);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+>>>>>>> a70e7d3fdb2a8953e65091fbe295f0d5b5cebc4a
 }
