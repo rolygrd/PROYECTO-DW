@@ -29,6 +29,7 @@ const brokenImages = [
     "Finn"
 ];
 
+//CARACTERISTICAS
 const translations = {
     "male": "Masculino",
     "female": "Femenino",
@@ -197,7 +198,7 @@ async function loadDetail() {
 
         detailDiv.innerHTML = `
             <p class="text-red-500 text-center text-lg">
-                Error al cargar el personaje.
+                Error al cargar .
             </p>
         `;
     }

@@ -47,7 +47,7 @@ const translations = {
     "yoda's species": "Especie de Yoda",
     "twi'lek": "Twi'lek"
 };
-
+//
 const translate = (value) => {
     if (!value) return 'Desconocido';
     const lowerValue = value.toLowerCase().trim();
@@ -189,6 +189,7 @@ function renderComparison() {
         const img1 = brokenImages.includes(char1.name) ? defaultSpaceImage : char1.image;
         const img2 = brokenImages.includes(char2.name) ? defaultSpaceImage : char2.image;
 
+        //COMPARASIONES
         comparisonSection.innerHTML = `
             <div class="w-[98%] md:w-[1300px] max-w-7xl bg-slate-950 rounded-2xl p-8 border-2 border-yellow-500 shadow-[0_0_25px_rgba(234,179,8,0.2)] relative max-h-[95vh] overflow-y-auto animate-modal">
                 <button onclick="clearComparison()" class="absolute top-4 right-4 text-slate-400 hover:text-white text-2xl cursor-pointer transition">✕</button>
