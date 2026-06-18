@@ -3,6 +3,7 @@ const detailDiv = document.getElementById('character-detail');
 const params = new URLSearchParams(window.location.search);
 const id = params.get('id');
 
+//PERSONAJES
 const brokenImages = [
     "Roos Tarpals",
     "Rugor Nass",
@@ -99,7 +100,7 @@ function formatBirthYear(born) {
 
     return "Año 0";
 }
-
+// DETALLE DE CADA PERSONAJE
 async function loadDetail() {
     try {
         const response = await fetch(
@@ -189,7 +190,7 @@ async function loadDetail() {
                 href="../index.html"
                 class="mt-8 block text-center bg-green-500 text-slate-900 font-bold py-3 rounded-xl hover:bg-orange-700 transition"
             >
-                Volver a la Galaxia
+                INCIO
             </a>
         `;
 
